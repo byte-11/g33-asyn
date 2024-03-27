@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/db
+    username: postgres
+    password: 1234
+
+server:
+  applications:
+    - name: payment-system
+      languages:
+        - Java
+        - Kotlin
+    - name: authentication-server
+      languages:
+        - C++
+        - Go
+  hello-message: |
+    Hello
+    Hello
+    Hello
